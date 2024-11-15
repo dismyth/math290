@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6v‰LEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         jax: ["input/TeX", "output/HTML-CSS"],
+         extensions: ["tex2jax.js"],
+         "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+         tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+         TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+         messageStyle: "none"
+       });
+   </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+    </script>
+    <script type="text/javscript">
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+    <title>MATH190</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar" class="collapse navbar-collapse">
+                <a class="navbar-brand" href="#">MATH190</a>
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#topics">Topics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hw">HW</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item"><a class="nav-link" href="https://math.tufts.edu/">Math @ Tufts</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container" style="padding-top: 20pt; padding-bottom: 0pt">
+        <div class="jumbotron" id="home" style=" margin-bottom: 10pt">
+            <h1>MATH 290</h1>
+            <p class="lead" style=" margin-bottom: -20pt">
+                Category Theory and Type Theory <br>
+                Mo/We 1:30-2:45 <br>
+                Location TBA </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="description">
+            <div class="page-header" style="padding-bottom: 5pt">
+                <h2>Description</h2>
+                <p>
+                    Type theories are certain kinds of formal deduction systems that can be used instead of set theory
+                    to provide a ‘foundation for mathematics.’ Historically, type theories have been more studied in
+                    computer science, linguistics, and philosophy departments than in math departments, but this has
+                    been changing recently with the recognition that the algebraic structures arising in type theory
+                    bear an intimate relationship to algebraic structures arising in pure math (e.g. in algebraic
+                    topology and geomety).
+                </p>
+                <p>
+                    This course will attempt to give an elementary introduction to type theory with minimal
+                    prerequisites. My plan is to follow the textbook ”Type Theory and Formal Proof” by Nederpelt and
+                    Geuvers, supplementing with other sources as necessary. A certain amount of category theory is
+                    indispensible for understanding type theory, so this will be introduced on an as-needed basis. A
+                    good reference for category theory is “An introduction to category theory” by Harold Simmons.
+                </p>
+            </div>
+            <!-- <h4 style="padding-top: 10pt">References:</h4>
+            <b>Main</b><br>
+            &emsp;Steve Awodey's lecture notes on Categorical Logic [<a
+                href="https://awodey.github.io/catlog/">link</a>]<br>
+
+            <b>Supplemental</b><br>
+            &emsp;Samson Abramsky and Nikos Tzevelekos, Introduction to Categories and Categorical Logic. [<a
+                href="./Categories and Categorical Logic.pdf">link to book</a>]<br>
+            <hr> -->
+        </section>
+    </div>
+
+    <div class="container">
+        <section id="schedule">
+            <div class="page-header">
+                <h2>Schedule</h2>
+            </div>
+
+            <table class="table table-striped table-condensed">
+                <tr>
+                    <th class="text-left">Date</th>
+                    <th class="text-left">Topic</th>
+                <tr>
+                    <th class="text-left">Jan 15</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Jan 20</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Jan 22</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Jan 29</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Feb 3</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Feb 5</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Feb 10</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Feb 12</th>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th class="text-left">Feb 19</th>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th class="text-left">Feb 20</th>
+                    <td>Mon/Thu swapped</td>
+                </tr>
+                <tr>
+                    <th class="text-left">Feb 24</th>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th class="text-left">Feb 26</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Mar 3</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Mar 5</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Mar 10</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Mar 12</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Mar 17</th>
+                    <td>No Class</td>
+                </tr>
+                <tr>
+                    <th class="text-left">Mar 19</th>
+                    <td>No Class</td>
+                </tr>
+                <tr>
+                    <th class="text-left">Mar 24</th>
+                    <td></td>
+
+                <tr>
+                    <th class="text-left">Mar 26</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Mar 31</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Apr 2</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Apr 7</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Apr 9</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Apr 14</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Apr 16</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Apr 21</th>
+                    <td>No Class</td>
+                </tr>
+                <tr>
+                    <th class="text-left">Apr 23</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left">Apr 28</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="text-left"></th>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+        <hr />
+    </div>
+
+    <div class="container">
+        <section id="hw">
+            <div class="page-header">
+
+            </div>
+            <p></p>
+        </section>
+    </div>
+
+</body>
+
+</html>
